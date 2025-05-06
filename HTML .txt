@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <title>Exercícios JS</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <h1>Exercícios com JavaScript</h1>
+
+  <section>
+    <h2>1. Cálculo do IMC</h2>
+    <input type="number" id="peso" placeholder="Peso (kg)">
+    <input type="number" id="altura" placeholder="Altura (m)">
+    <button onclick="calcularIMC()">Calcular IMC</button>
+    <p id="resultadoIMC"></p>
+  </section>
+
+  <section>
+    <h2>2. Conversão de Moeda</h2>
+    <input type="number" id="dolar" placeholder="Valor em dólares">
+    <button onclick="converterMoeda()">Converter para Reais</button>
+    <p id="resultadoMoeda"></p>
+  </section>
+
+  <section>
+    <h2>3. Média Ponderada</h2>
+    <input type="number" id="nota1" placeholder="Nota 1">
+    <input type="number" id="peso1" placeholder="Peso 1">
+    <input type="number" id="nota2" placeholder="Nota 2">
+    <input type="number" id="peso2" placeholder="Peso 2">
+    <input type="number" id="nota3" placeholder="Nota 3">
+    <input type="number" id="peso3" placeholder="Peso 3">
+    <button onclick="mediaPonderada()">Calcular Média</button>
+    <p id="resultadoMedia"></p>
+  </section>
+
+  <section>
+    <h2>4. Conversão de Temperatura</h2>
+    <input type="number" id="celsius" placeholder="Celsius">
+    <button onclick="converterTemperatura()">Converter</button>
+    <p id="resultadoTemp"></p>
+  </section>
+
+  <section>
+    <h2>5. Tempo de Viagem</h2>
+    <input type="number" id="distancia" placeholder="Distância (km)">
+    <input type="number" id="velocidade" placeholder="Velocidade (km/h)">
+    <button onclick="tempoViagem()">Calcular Tempo</button>
+    <p id="resultadoViagem"></p>
+  </section>
+
+  <section>
+    <h2>6. Verificação de Aprovação</h2>
+    <input type="number" id="notaFinal" placeholder="Nota final">
+    <button onclick="verificarAprovacao()">Verificar</button>
+    <p id="resultadoAprovacao"></p>
+  </section>
+
+  <section>
+    <h2>7. Par ou Ímpar</h2>
+    <input type="number" id="numeroParImpar" placeholder="Digite um número">
+    <button onclick="parOuImpar()">Verificar</button>
+    <p id="resultadoParImpar"></p>
+  </section>
+
+  <section>
+    <h2>8. Soma de Números</h2>
+    <button onclick="somaNumeros()">Começar Soma</button>
+    <p id="resultadoSoma"></p>
+  </section>
+
+  <section>
+    <h2>9. Tabuada</h2>
+    <input type="number" id="numeroTabuada" placeholder="Digite um número">
+    <button onclick="mostrarTabuada()">Mostrar Tabuada</button>
+    <pre id="resultadoTabuada"></pre>
+  </section>
+
+  <section>
+    <h2>10. Contagem Regressiva</h2>
+    <input type="number" id="numeroContagem" placeholder="Número inicial">
+    <button onclick="contagemRegressiva()">Contar</button>
+    <pre id="resultadoContagem"></pre>
+  </section>
+
+  <script src="script.js"></script>
+</body>
+</html>

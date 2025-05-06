@@ -1,0 +1,89 @@
+// 1. Cálculo do IMC
+function calcularIMC() {
+  var peso = parseFloat(document.getElementById('peso').value);
+  var altura = parseFloat(document.getElementById('altura').value);
+  var imc = peso / (altura * altura);
+  document.getElementById('resultadoIMC').innerText = "IMC: " + imc.toFixed(2);
+}
+
+// 2. Conversão de Moeda
+function converterMoeda() {
+  var dolar = parseFloat(document.getElementById('dolar').value);
+  var taxaCambio = 5.3; // Exemplo de taxa de câmbio
+  var reais = dolar * taxaCambio;
+  document.getElementById('resultadoMoeda').innerText = "Valor em Reais: R$ " + reais.toFixed(2);
+}
+
+// 3. Média Ponderada
+function mediaPonderada() {
+  var nota1 = parseFloat(document.getElementById('nota1').value);
+  var peso1 = parseFloat(document.getElementById('peso1').value);
+  var nota2 = parseFloat(document.getElementById('nota2').value);
+  var peso2 = parseFloat(document.getElementById('peso2').value);
+  var nota3 = parseFloat(document.getElementById('nota3').value);
+  var peso3 = parseFloat(document.getElementById('peso3').value);
+  
+  var media = (nota1 * peso1 + nota2 * peso2 + nota3 * peso3) / (peso1 + peso2 + peso3);
+  document.getElementById('resultadoMedia').innerText = "Média Ponderada: " + media.toFixed(2);
+}
+
+// 4. Conversão de Temperatura
+function converterTemperatura() {
+  var celsius = parseFloat(document.getElementById('celsius').value);
+  var fahrenheit = (celsius * 9/5) + 32;
+  document.getElementById('resultadoTemp').innerText = "Temperatura em Fahrenheit: " + fahrenheit.toFixed(2);
+}
+
+// 5. Tempo de Viagem
+function tempoViagem() {
+  var distancia = parseFloat(document.getElementById('distancia').value);
+  var velocidade = parseFloat(document.getElementById('velocidade').value);
+  var tempo = distancia / velocidade;
+  document.getElementById('resultadoViagem').innerText = "Tempo de Viagem: " + tempo.toFixed(2) + " horas";
+}
+
+// 6. Verificação de Aprovação
+function verificarAprovacao() {
+  var notaFinal = parseFloat(document.getElementById('notaFinal').value);
+  var resultado = (notaFinal >= 6) ? "Aprovado!" : "Reprovado!";
+  document.getElementById('resultadoAprovacao').innerText = resultado;
+}
+
+// 7. Par ou Ímpar
+function parOuImpar() {
+  var numero = parseInt(document.getElementById('numeroParImpar').value);
+  var resultado = (numero % 2 === 0) ? "É Par!" : "É Ímpar!";
+  document.getElementById('resultadoParImpar').innerText = resultado;
+}
+
+// 8. Soma de Números
+function somaNumeros() {
+  var soma = 0;
+  var numero;
+  while (true) {
+    numero = parseInt(prompt("Digite um número (ou 0 para sair):"));
+    if (numero === 0) break;
+    soma += numero;
+  }
+  document.getElementById('resultadoSoma').innerText = "Soma total: " + soma;
+}
+
+// 9. Tabuada
+function mostrarTabuada() {
+  var numero = parseInt(document.getElementById('numeroTabuada').value);
+  var tabuada = '';
+  for (var i = 1; i <= 10; i++) {
+    tabuada += numero + " x " + i + " = " + (numero * i) + "\n";
+  }
+  document.getElementById('resultadoTabuada').innerText = tabuada;
+}
+
+// 10. Contagem Regressiva
+function contagemRegressiva() {
+  var numero = parseInt(document.getElementById('numeroContagem').value);
+  var contagem = '';
+  for (var i = numero; i >= 0; i--) {
+    contagem += i + "\n";
+  }
+  document.getElementById('resultadoContagem').innerText = contagem;
+}
